@@ -1,0 +1,31 @@
+[ERR!] cwd  : F:\Angular\jmcopper\ng2-fundamentals
+[ERR!] os   : Windows_NT 10.0.14393
+[ERR!] argv : "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Nilesh\\AppData\\Roaming\\npm\\node_modules\\tsd\\build\\cli.js" "install" "jquery" "--save"
+[ERR!] node : v7.4.0
+[ERR!] tsd  : 0.6.5
+[ERR!] Error: Cannot find module 'internal/fs'
+[ERR!] CODE : MODULE_NOT_FOUND
+[ERR!] Cannot find module 'internal/fs'
+[ERR!] If you need help, you may report this error at:
+    https://github.com/DefinitelyTyped/tsd/issues
+
+[ERR!] 
+Error: Cannot find module 'internal/fs'
+    at Function.Module._resolveFilename (module.js:470:15)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at evalmachine.<anonymous>:18:20
+    at Object.<anonymous> (C:\Users\Nilesh\AppData\Roaming\npm\node_modules\tsd\node_modules\graceful-fs\fs.js:11:1)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+
+[ERR!] tsd.json could not be retrieved
+
+[ERR!] .tsdrc could not be retrieved
+
+[ERR!] Please include the following file with any support request:
+    F:\Angular\jmcopper\ng2-fundamentals\tsd-debug.log
+

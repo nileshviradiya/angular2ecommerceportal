@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-3">
+            <div class="sidebar-nav-fixed pull-right affix">
+                <brand-list [brand]="brand" (notifyBrand)="onNotifyBrand($event)"></brand-list>
+            </div>
+            <!--/sidebar-nav-fixed (change)="countChange($event)"-->
+        </div>
+        <!--/span-->
+
+        <div class="col-md-9">
+            <topbar [productcategory]="category" [pcount]="pcount" (notifySort)="onNotifySort($event)" (notifyList)="ListClicked($event)" (notifyGrid)="GridClicked($event)"></topbar>
+            <div id="products" class="row list-group">
+                <div class="item  col-xs-4 col-lg-4" *ngFor="let product of products">
+                    
+                    <div class="thumbnail">
+                        <a [routerLink]="['./', product._id ]">
+
+                            <img class="group list-group-image" src="http://localhost:8808/app/assets/product/1.jpg" alt="" />
+                        </a>
+                        <div class="caption">
+                            <h4 class="group inner list-group-item-heading">
+                                {{product.brand}} - {{product.category}} </h4>
+                            <p class="group inner list-group-item-text">
+                                {{product.name}}</p>
+                            <div class="row">
+                                &nbsp;&nbsp;
+                                <s>
+                             Rs. {{product.price}}    </s> &nbsp;&nbsp;&nbsp;&nbsp; Rs. {{product.offers[0].price}}&nbsp;&nbsp;&nbsp;&nbsp; ( {{product.offers[0].discount}} %)
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--/row-->

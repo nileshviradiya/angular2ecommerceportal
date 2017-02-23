@@ -1,0 +1,22 @@
+<!--<div class="item  col-xs-4 col-lg-4" *ngFor="let b of brand">
+    {{b}}
+</div>-->
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr *ngFor="let role of brand">
+             <label>
+        <input type="checkbox" name="brand" [(ngModel)]="role.selected" 
+        [value]="role.name" (click)='onClick()' >
+        {{role.name}}
+        </label>
+            </tr>
+        </tbody>
+    </table>

@@ -1,0 +1,19 @@
+<strong> {{productcategory}} - {{pcount}}  Items </strong>
+<div class="btn-group">
+    <a id="list" class="btn btn-default btn-sm" (click)="ListClicked(this)"><span class="glyphicon glyphicon-th-list">
+            </span>List</a> <a id="grid" class="btn btn-default btn-sm" (click)="GridClicked(this)"><span
+                class="glyphicon glyphicon-th"></span>Grid</a>
+</div>
+<div class="btn-group btn-group-sm" style="float:right">
+    <div class="row ">
+        <label for="return1"><b>   Sort:</b></label>
+        <a id="grid" class="btn btn-default btn-sm" [class.active]="sortBy==='Popular'" (click)="Sort('Popular')">Popular</a>
+        <span id='return1'> |</span>
+        <a id="grid" class="btn btn-default btn-sm" [class.active]="sortBy==='New'" (click)="Sort('New')">New</a>
+        <span id='return1'> |</span>
+        <a id="grid" class="btn btn-default btn-sm" [class.active]="sortBy==='Discount'" (click)="Sort('Discount')">Discount</a>
+        <span id='return1'> |</span>
+        <label for="return1"><b>Price:</b></label>
+        <a id="grid" class="btn btn-default btn-sm" [class.active]="sortBy==='Low'" (click)="Sort('Low')">Low</a>
+        <a id="grid" class="btn btn-default btn-sm" [class.active]="sortBy==='High'" (click)="Sort('High')">High</a>
+    </div>
